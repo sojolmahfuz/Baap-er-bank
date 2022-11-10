@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>Welcome to Your Banking Dashboard</h1>
+    <header>
+        <h1 class="text-6xl text-center mt-16 ">Let's get some <span class="font-semibold text-purple-600">Moneeeeeeey </span>!!</h1>
+    </header>
+
+    <main class="w-3/4 mx-auto">
+        <!-- Balance, Transaction Sheet -->
+        <section class="mt-10 ">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                <div class="bg-blue-300 p-8 rounded">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h4 class="text-4xl">$00</h4>
+                </div>
+                <div class="bg-green-300 p-8 rounded">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h4 class="text-4xl">$00</h4>
+                </div>
+                <div class="bg-yellow-300 p-8 rounded">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h4 class="text-4xl">$1200</h4>
+                </div>
+            </div>
+        </section>
+         <!-- Balance, Transaction Sheet -->
+
+         <!-- Deposit and Withdraw -->
+         <section class="mt-10">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-red-100 p-8 rounded">
+                    <h3 class="text-2xl">Please Deposit</h3>
+                    <div action="" class="mx-auto">
+                        <input id="deposit-amount" class="block mb-3 w-3/4 p-3 border rounded-md border-gray-100" type="text" placeholder="$ Amount You Want to Deposit ">
+        
+                        <button id="deposit-button" class="p-3 bg-orange-400 text-white font-medium rounded-md">Deposit</button>
+                    </div>
+                </div>
+                <div class="bg-indigo-100 p-8 rounded">
+                    <h3 class="text-2xl">Please Withdraw</h3>
+                    <div action="" class="mx-auto">
+                        <input id="withdraw-amount" class="block mb-3 w-3/4 p-3 border rounded-md border-gray-100" type="text" placeholder="$ Amount You Want to Withdraw ">
+        
+                        <button id="withdraw-button" class="p-3 bg-orange-400 text-white font-medium rounded-md">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
+    <script src="js/banking.js"></script>
+
 </body>
 </html>
