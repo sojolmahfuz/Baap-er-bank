@@ -32,3 +32,11 @@ document.getElementById('deposit-button').addEventListener('click', function(){
     depositInput.value ='';
 })
 
+    // Withdrwa Event Handler
+
+    document.getElementById('withdraw-button').addEventListener('click', function(){
+        const withdrawInput = document.getElementById('withdraw-amount');
+        const withdrawAmountText = withdrawInput.value;
+        console.log(withdrawAmountText);
+    })
+
