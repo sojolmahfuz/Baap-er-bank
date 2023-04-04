@@ -1,10 +1,34 @@
- //Button Handler
+//  function doubleInt (num){
+//     const result = num * 2;
+//     return result;
+//  }
 
-document.getElementById('deposit-button').addEventListener('click', function(){
+//  const first = doubleInt (5);
+//  const second = doubleInt (7);
+
+
+
+function getInputValue(){
     const depositInput = document.getElementById('deposit-amount');
 
     const newDepositAmountText = depositInput.value;
     const newDepositAmount = parseFloat(newDepositAmountText);
+    
+    //Clear the input field
+    depositInput.value ='';
+    
+    return newDepositAmount;
+
+}
+ 
+ //Button Handler
+
+document.getElementById('deposit-button').addEventListener('click', function(){
+    // const depositInput = document.getElementById('deposit-amount');
+
+    // const newDepositAmountText = depositInput.value;
+    // const newDepositAmount = parseFloat(newDepositAmountText);
+    const newDepositAmount = getInputValue();
 
 
     const depositTotal = document.getElementById('deposit-total');
@@ -26,9 +50,7 @@ document.getElementById('deposit-button').addEventListener('click', function(){
     const newBalanceTotal = previousBalanceTotal + newDepositAmount;
     balanceTotal.innerText = newBalanceTotal;
 
-    //Clear the input field
-
-    depositInput.value ='';
+    
 })
 
     // Withdraw Event Handler
