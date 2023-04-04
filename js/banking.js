@@ -1,12 +1,3 @@
-//  function doubleInt (num){
-//     const result = num * 2;
-//     return result;
-//  }
-
-//  const first = doubleInt (5);
-//  const second = doubleInt (7);
-
-
 
 function getInputValue(inputId){
     const depositInput = document.getElementById(inputId);
